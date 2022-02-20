@@ -37,25 +37,17 @@ hand = sorted(hand)
 for i in range(0,7):
     print(hand[i])
 
-# Не понимаю, почему здесь все работает 
-print(hand[3].getRank())
-
-# А тут не работает
-for i in hand:
-        ranks = []
-        #suits = [None]
-        ranks.append(hand[i].getRank())
-        #suits.append(getSuid(hand[i]))
-
-'''def combination(hand):
-    for i in hand:
-        ranks = [None]
-        suits = [None]
-        ranks.append(Card.getRank(hand[i]))
-        suits.append(Card.getSuid(hand[i]))
+def combination(hand):
+    ranks = [None]
+    suits = [None]
+    for i in hand:  
+        ranks.append(i.getRank())
+        suits.append(i.getSuit())
 
     def high_card(ranks):
         if "Ace" in ranks:
             print("High card: Ace")
         else:
-            print("High card: " + ranks[-1])'''
+            print("High card: " + ranks[-1])
+    high_card(ranks)
+combination(hand)
