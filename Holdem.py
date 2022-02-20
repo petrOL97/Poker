@@ -47,7 +47,7 @@ for i in hand:
         ranks.append(hand[i].getRank())
         #suits.append(getSuid(hand[i]))
 
-def combination(hand):
+'''def combination(hand):
     for i in hand:
         ranks = [None]
         suits = [None]
@@ -58,4 +58,4 @@ def combination(hand):
         if "Ace" in ranks:
             print("High card: Ace")
         else:
-            print("High card: " + ranks[-1])
+            print("High card: " + ranks[-1])'''
