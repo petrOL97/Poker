@@ -42,7 +42,7 @@ print(hand[3].getRank())
 
 # А тут не работает
 for i in hand:
-        ranks = [None]
+        ranks = []
         #suits = [None]
         ranks.append(hand[i].getRank())
         #suits.append(getSuid(hand[i]))
