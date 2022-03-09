@@ -1,4 +1,5 @@
 import random
+from itertools import groupby
 
 class Card:
     """playing card object with rank and suit"""
@@ -25,7 +26,7 @@ class Card:
     def getSuit(self):
         return self.suits.get(self.suit)
 
-deck = [None]
+deck = []
 for i in range(1, 14):
     deck.append(Card(i, "d"))
     deck.append(Card(i, "c"))
@@ -38,16 +39,26 @@ for i in range(0,7):
     print(hand[i])
 
 def combination(hand):
-    ranks = [None]
-    suits = [None]
+    ranks = []
+    suits = []
     for i in hand:  
         ranks.append(i.getRank())
         suits.append(i.getSuit())
+    print(ranks)
+    print(suits)       
 
+    def street(ranks):
+        ranks_list = ("Ace", 2, 3, 4, 5, 6, 7, 8, 9, 10, "Jack", "Queen", "King", "Ace")
+        i
     def high_card(ranks):
         if "Ace" in ranks:
             print("High card: Ace")
         else:
             print("High card: " + ranks[-1])
     high_card(ranks)
+
+    #def one_pair(ranks):
+     #   ranks_set = [i for i, _ in groupby(i)]
+      #  print (ranks_set)
+    #sone_pair(ranks)
 combination(hand)
