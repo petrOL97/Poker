@@ -48,8 +48,15 @@ def combination(hand):
     print(suits)       
 
     def street(ranks):
-        ranks_list = ("Ace", 2, 3, 4, 5, 6, 7, 8, 9, 10, "Jack", "Queen", "King", "Ace")
-        i
+        ranks_list = ("Ace", 2, 3, 4, 5, 6, 7, 8, 9, 10, "Jack", "Queen", "King")
+        a = iter(ranks_list.reverse())
+        b = iter(ranks.reverse())
+        for i in ranks_list.reverse()
+            if a == b:
+                cont
+            else:
+                
+         
     def high_card(ranks):
         if "Ace" in ranks:
             print("High card: Ace")
@@ -57,8 +64,8 @@ def combination(hand):
             print("High card: " + ranks[-1])
     high_card(ranks)
 
-    #def one_pair(ranks):
-     #   ranks_set = [i for i, _ in groupby(i)]
-      #  print (ranks_set)
+    def one_pair(ranks):
+       ranks_set = [i for i, _ in groupby(i)]
+        print (ranks_set)
     #sone_pair(ranks)
 combination(hand)
